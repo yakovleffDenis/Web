@@ -1,0 +1,59 @@
+<html>
+ <head>
+  <style>
+      body{
+       background-color: #FAFAD2;}
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+           width: 30%;
+        border: 5px solid #ddd;
+          border-radius: 6px;
+          padding: 5px;
+      }
+     </style>
+  <meta charset="utf-8">
+  <title>Wanted</title>
+<!--  <div style="border-left:#f0f0f0solid 1px;border-bottom:gray solid 1px;position:relative;left:2px top 5px;">-->
+     <body>
+         <script type="text/javascript">
+           function blinking_header()
+            {
+               if (!document.getElementById('blink').style.color)
+              {
+               document.getElementById('blink').style.color="red";
+              }
+                if (document.getElementById('blink').style.color=="red")
+              {
+              document.getElementById('blink').style.color="black";
+              }
+            else
+             {
+              document.getElementById('blink').style.color="red";
+             }
+               timer=setTimeout("blinking_header()",300);
+           }
+
+             function stoptimer()
+               {
+                 clearTimeout(timer);
+               }
+            </script>
+     </body>
+   
+  
+    <body onload="blinking_header()" onunload="stoptimer()">
+             <h1 id="blink" align="center"> MISSING </h1>
+              </script>
+              
+              
+              <img src="girl.jpeg" alt="girl">
+                  
+                  
+ <p style="color:red";font-size:100px align="center">Iif you see her, please call the phone number: 0957539915 </p>
+  
+  </div>
+ </body>
+</head>
+</html>
